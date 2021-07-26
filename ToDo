@@ -1,0 +1,16 @@
+1. Transfer Kamikazee Karaoke excel file to Table in Database called Songs.
+    a. Verify all songs in songs.xlsx
+    b. Verify all rows exist:
+        -Song Title
+            *Confirmed
+        -Artist
+            *Confirmed
+        -Favorite
+            *Confirmed
+        -Genre
+        -Year
+    c. Convert to Table in Database kamikazeekaraoke
+        -Need to set up a seed file so all of this is prepped and just needs to be added.
+            *Refer to other backends.
+    d. Be sure this is in the correct location.
+        -Should be in the Backend file.
