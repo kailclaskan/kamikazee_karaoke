@@ -1,0 +1,40 @@
+{
+    "id": 1397977372,
+    "readable": true,
+    "title": "Because the Night",
+    "title_short": "Because the Night",
+    "title_version": "",
+    "link": "https:\/\/www.deezer.com\/track\/1397977372",
+    "duration": 171,
+    "rank": 729810,
+    "explicit_lyrics": false,
+    "explicit_content_lyrics": 0,
+    "explicit_content_cover": 2,
+    "preview": "https:\/\/cdns-preview-f.dzcdn.net\/stream\/c-fef38f74efff28837f884db3baddcfa6-4.mp3",
+    "md5_image": "3a3223722e4457b1f48dd832f686da28",
+    "artist": {
+    "id": 5997108,
+    "name": "Sandëro",
+    "link": "https:\/\/www.deezer.com\/artist\/5997108",
+    "picture": "https:\/\/api.deezer.com\/artist\/5997108\/image",
+    "picture_small": "https:\/\/cdns-images.dzcdn.net\/images\/artist\/3a3223722e4457b1f48dd832f686da28\/56x56-000000-80-0-0.jpg",
+    "picture_medium": "https:\/\/cdns-images.dzcdn.net\/images\/artist\/3a3223722e4457b1f48dd832f686da28\/250x250-000000-80-0-0.jpg",
+    "picture_big": "https:\/\/cdns-images.dzcdn.net\/images\/artist\/3a3223722e4457b1f48dd832f686da28\/500x500-000000-80-0-0.jpg",
+    "picture_xl": "https:\/\/cdns-images.dzcdn.net\/images\/artist\/3a3223722e4457b1f48dd832f686da28\/1000x1000-000000-80-0-0.jpg",
+    "tracklist": "https:\/\/api.deezer.com\/artist\/5997108\/top?limit=50",
+    "type": "artist"
+    },
+    "album": {
+    "id": 235877722,
+    "title": "Because the Night",
+    "cover": "https:\/\/api.deezer.com\/album\/235877722\/image",
+    "cover_small": "https:\/\/cdns-images.dzcdn.net\/images\/cover\/3a3223722e4457b1f48dd832f686da28\/56x56-000000-80-0-0.jpg",
+    "cover_medium": "https:\/\/cdns-images.dzcdn.net\/images\/cover\/3a3223722e4457b1f48dd832f686da28\/250x250-000000-80-0-0.jpg",
+    "cover_big": "https:\/\/cdns-images.dzcdn.net\/images\/cover\/3a3223722e4457b1f48dd832f686da28\/500x500-000000-80-0-0.jpg",
+    "cover_xl": "https:\/\/cdns-images.dzcdn.net\/images\/cover\/3a3223722e4457b1f48dd832f686da28\/1000x1000-000000-80-0-0.jpg",
+    "md5_image": "3a3223722e4457b1f48dd832f686da28",
+    "tracklist": "https:\/\/api.deezer.com\/album\/235877722\/tracks",
+    "type": "album"
+    },
+    "type": "track"
+}
