@@ -1,3 +1,0 @@
-let REACT_APP_YOUTUBE_API_KEY = "AIzaSyDL7bMV5fSCWzoh-EinFzZPq0K_bRNRxyk";
-
-export default REACT_APP_YOUTUBE_API_KEY;
