@@ -90,3 +90,30 @@ I think that I'll have it be 80's and have min = year:
 	}`
 Or something along those lines
 So if it's 80's it would be 1980 - 1989 because we will already encompass 1990 within the 90's category.
+
+**08/17/2021**
+Starting React development
+Set up the components for the random karaoke song.
+Created files RandomSong, Karaoke Video, Lyrics and MusicVideo. 
+Was able to implement random song selections
+Used iframe to load the Karaoke video into the page
+Struggled a bit, but found it was because I was using watch instead of embed/id
+Adjusted and now it's working.
+Getting:
+Video unavailable
+Playback on other websites has been disabled by the video owner.
+Watch on YouTube
+Found it's likely because it's Karafun is the host.
+Researching now.
+3/3 were karafun...willing to bet this is the issue.
+need to dig through and have the system search through the res for non-karafun, before accepting.
+Console Log info:
+Could check against snippet.channelTitle: "KaraFun Karaoke"
+for(song of res.data){
+	if(song.snippet.channeltTitle !== "KaraFun Karaoke"){
+		videoId = song.id.videoId;
+		break;
+	}
+}
+Found that SingKing and Karafun are causing this issue.
+Went over my limit, need to wait a bit.
