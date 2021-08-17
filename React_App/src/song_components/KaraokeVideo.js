@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import {YT_API_KEY} from "../secret";
+import {YT_API_KEY} from "../../secret";
 
 //Need to make it so this is NOT so public.
 
