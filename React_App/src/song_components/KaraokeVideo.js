@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 //Need to make it so this is NOT so public.
-let REACT_APP_YOUTUBE_API_KEY = "AIzaSyDL7bMV5fSCWzoh-EinFzZPq0K_bRNRxyk";
 
 let KaraokeVideo = ({songTitle, songArtist}) => {
     let [videoId, setVideoId] = useState("");
