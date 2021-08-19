@@ -117,3 +117,19 @@ for(song of res.data){
 }
 Found that SingKing and Karafun are causing this issue.
 Went over my limit, need to wait a bit.
+
+**08/18/2021**
+Time to play with Lyrics
+Server is down apparently....hm....
+Went back to research Musixmatch.
+Limited to 2k calls daily
+Only get 30% of song lyrics per call....
+Really not going to work.
+Shazam api isn't working out either.
+Doesn't give lyrics
+Genius returns lyrics via a url instead of the body.
+Per the example response for Mourits, IT would be perfect.
+Problem is it's not working....FML
+Genius may work if I can scrape the site for the lyric.
+Reference https://cmichel.io/song-lyrics-in-nodejs for a way to potentially get song lyrics.
+Going to see if I can find a way to scrape the site for the lyrics. Found a potential walk through (Above)
