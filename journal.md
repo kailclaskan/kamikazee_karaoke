@@ -133,3 +133,36 @@ Problem is it's not working....FML
 Genius may work if I can scrape the site for the lyric.
 Reference https://cmichel.io/song-lyrics-in-nodejs for a way to potentially get song lyrics.
 Going to see if I can find a way to scrape the site for the lyrics. Found a potential walk through (Above)
+
+**08/30/2021**
+Spent the last week and a half moving and prepping/unpacking.
+Finally back on this.
+After last meeting with mentor it came to my attention that I should be trying to do more in the backend.
+Most of my CORS issues would be alleviated with backend implementation.
+Researched some backend projects from the past.
+Mocked the basics of my backend from Jobly.
+Played with the helpers functions and made sure I was able to retrieve the YouTube links and the lyrics populated.
+Confirmed that everything was populating like it's supposed to.
+Having trouble getting the information to populate
+Only getting Promise Pending.
+Shows up correct when in an async function.
+Looking through the way this was handled in Jobly.
+Not getting it.
+Asked mentor.
+Suggested .then
+It works, but again only after the fact.
+I'm an idiot....
+Everything will be returned via a route and will go through async/await.
+Packaged in a route.
+Forgot to install everything.
+Installed dependencies.
+Verified that all is populating when using return res.json({info})
+Tested a couple of dozen times.
+Adjusted some language:
+l -> lyric -> lyrics
+k -> karaoke -> karaokeUrl
+Created helper for musicVideo
+Populates the music video of the song by artist.
+The first section of this is done. Need to work on the next.
+Not ready to set up the users/auth just yet.
+Going to focus on turning in the first assignment of this project.
