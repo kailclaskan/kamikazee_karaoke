@@ -166,3 +166,19 @@ Populates the music video of the song by artist.
 The first section of this is done. Need to work on the next.
 Not ready to set up the users/auth just yet.
 Going to focus on turning in the first assignment of this project.
+
+**08/31/2021**
+Database day.
+Setup Database to reflect SCHEMA.
+Not a huge database and only for those who want to track their favorite songs.
+Will update the songs array by creating a new array to adjust for anything that the user sets as a favorite IF they want.
+* Will likely be an option that the user selects, similar to that of the year/genre definition.
+Mocked db after the Jobly db
+Ran .sql file and confirmed that everything was created.
+Now I need to run routes to create database input.
+Need to also set up Salt/Hashing for Password and Date of Birth.
+Date of Birth will be used to assist a user in resetting their password.
+Security question will not be hashed, though maybe it should
+Security answer will be hashed.
+Both will be used to verify the user.
+Uploaded database files to git hub.
