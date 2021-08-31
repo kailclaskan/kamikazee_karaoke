@@ -1,3 +1,10 @@
+# Used API's
+    * https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=
+      * This is for the youtube karaoke video and the music video that will be populated.
+    * Technically not an api, but to pull the lyrics I use the genius-lyrics node package. It uses the genius API to pull the lyrics and only the lyrics.
+    * Finally I will use personal api for user creation so users can like songs.
+      * This will create a new song array that only includes the users liked songs and will randomize based on that array if the user chooses to do this.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
