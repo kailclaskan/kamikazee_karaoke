@@ -9,8 +9,8 @@ const PORT = +process.env.PORT || 3001;
 
 function getDatabaseURI(){
     return(process.env.NODE_ENV === "test")
-        ? "kk_test"
-        : process.env.DATABASE_URL || "kk";
+        ? "kamikazee_karaoke-test"
+        : process.env.DATABASE_URL || "kamikazee_karaoke";
 }
 const YT_API_KEY = "AIzaSyDL7bMV5fSCWzoh-EinFzZPq0K_bRNRxyk";
 const BCRYPT_WORK_FACTOR = process.env.NODE_ENV === "test" ? 1:12;
