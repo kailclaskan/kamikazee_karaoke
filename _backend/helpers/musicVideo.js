@@ -1,4 +1,4 @@
-const { YT_API_KEY } = require("../config");
+const { YT_API_KEY } = require("../keys");
 const axios = require("axios");
 
 let musicVideo = async (songTitle, songArtist) =>{
