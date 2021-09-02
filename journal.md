@@ -182,3 +182,40 @@ Security question will not be hashed, though maybe it should
 Security answer will be hashed.
 Both will be used to verify the user.
 Uploaded database files to git hub.
+
+**09/01/2021**
+Officially have the backend setup.
+Was able to query the api, though when it comes time to do this for real some things will have to change.
+Wrote a bit on the front end, but because of the way I wrote it it used up my youtube quota and now I have to wait til some time tomorrow.
+I think I have it set up on the front end, but I'm not sure, will find out tomorrow.
+
+**09/02/2021**
+Able to query again.
+Verified that I can get it set up and working correctly.
+Have lyrics!
+Have the Karaoke Video, but the Music video is blank.
+Not embeddable.
+Looking into this.
+Apparently you can narrow down by using yt:accessControl action="embed"
+Attempted within a search to define and it still didn't work.
+Apparently there's a react youtube package that can be installed.
+https://www.npmjs.com/package/react-youtube
+Searching through all the returned results for the youtube search came up with nothing.
+Sad panda.
+Looking up better ways to add the music track.
+So far the app will only consist of the Karaoke Track and the lyrics, which may be enough once all the user functionality is added.
+Nothing is coming up that makes me go....hmm yeah that will work.
+Suppose I could, instead of embedding the video, just have a link that will open it up?
+Link would instead be: https://www.youtube.com/watch?v=[video id here]
+I could then add a link to the song that says something like Title by Artist Music Video located here.
+Should add this and see how it looks.
+I can make it look good.
+Struggling with making the link appear correctly.
+Need to work on that.
+I must have been doing something wrong because after reconfiguring it a bit it's now working.
+I need to do some sort of catch for just in case anything comes back empty.
+Added a check to the karaoke video backend helper to verify if there's data to sort through.
+Should help with performing a check in the front end.
+Did perform a check, but still had the 500 error. Maybe I forgot to restart the server?
+Either way the app is, I would say 65% done. Maybe 50% if we're including styling.
+Data is working as expected now though!!!!!

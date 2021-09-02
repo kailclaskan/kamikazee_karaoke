@@ -26,6 +26,5 @@ module.exports = {
     SECRET_KEY,
     PORT,
     BCRYPT_WORK_FACTOR,
-    YT_API_KEY,
     getDatabaseURI,
 };
