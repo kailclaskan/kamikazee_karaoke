@@ -219,3 +219,48 @@ Should help with performing a check in the front end.
 Did perform a check, but still had the 500 error. Maybe I forgot to restart the server?
 Either way the app is, I would say 65% done. Maybe 50% if we're including styling.
 Data is working as expected now though!!!!!
+
+**09/06/2021**
+Focused on setting up some restrictive random songs.
+In other words defining the songs by specific criteria.
+Started with returning artists
+Moved on to returning genres
+Working on returning dates.
+Dates may not need to be returned in this case.
+I think what I'll do is have a check box for specific year ranges.
+Years start at 0979???
+I think that's supposed to be 1979.
+Going to make adjustment to the data.
+Verified that 0979 is now gone.
+Years start with 1937
+Years end with 2021
+Date Ranges:
+	1930-1939
+	1940-1949
+	1950-1959
+	1960-1969
+	1970-1979
+	1980-1989
+	1990-1999
+	2000-2009
+	2010+
+Verified that genres and artists are returning all in JSON format.
+On the front end I need to sort out the look/feel of it all. 
+The back end is returning what I want it to at this moment. 
+Need to run through getting genre, date and artist returned with a random song from that g/d/a.
+Confirmed Artist is working
+Confirmed Genre is working
+Confirmed Date is working
+This is all confirmed on the backend.
+Tomorrow I will put effort into figuring out the front end.
+I need to sort out how I'm going to make this app look.
+To Do:
+Sort the app page by page.
+When does it load the information for the song? 
+I think I'm going to move that functionality to RandomSong, but that depends on I decide to do it.
+Right now I've got 5 different API paths.
+Do I want a component for eac version?
+Do I want a single component that's versatile enough to manage the change.
+How do I want it to look?
+Plan for Wednesday to start user/authentication.
+Tomorrow I will sort out how things will look.

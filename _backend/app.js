@@ -7,6 +7,7 @@ const cors = require("cors");
 
 //What routes will I have?
 const kamikazeeRoutes = require("./routes/kamikazee");
+const defineRoutes = require("./routes/define");
 
 const morgan = require("morgan");
 
@@ -20,6 +21,7 @@ app.use(morgan("tiny"));
 // app.use("/auth", authRoutes);
 // app.use("/users", usersRoutes);
 app.use("/kamikazee", kamikazeeRoutes);
+app.use("/define", defineRoutes);
 
 //Need to handle errors
 
