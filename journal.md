@@ -264,3 +264,22 @@ Do I want a single component that's versatile enough to manage the change.
 How do I want it to look?
 Plan for Wednesday to start user/authentication.
 Tomorrow I will sort out how things will look.
+
+**09/07/2021**
+Worked on a lot today.
+The app now has the ability to filter the type of song you want to sing.
+Created Filter scripts and RandomSongBasedOn scripts.
+These included: Genre/Artist/Date/User
+All, but User is up and running.
+Put a bit of CSS to work and made the front end look good.
+Have a nav bar:
+Kamikazee (Random song based on the whole songData array.)
+Filter your Kamikazee Karaoke Experience (Filter by one var listed above)
+Sign In (To be built, but it signs a user in.)
+Sign Up (To be built, but it creates a user.)
+After some trial and error I edited a few genres and artists to make sure they worked when used.
+Created API script so I could just call those specific methods instead of using Axios everywhere.
+Updated App. Instead of running the random song right when it loads, I have a landing page where the user decides where they're going.
+Cleaned up some unused vars and imports.
+A slightly different structure to the frontend.
+Added filter_components folder which contains the filter components and FilterSong folder which contains all the random song based on components.

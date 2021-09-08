@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-const rp = require('request-promise');
 let Lyrics = ({lyrics}) => {
     return (
         <>

@@ -1,24 +1,26 @@
 import React, {useEffect, useState} from 'react';
-import KaraokeVideo from './KaraokeVideo';
-import Lyrics from './Lyrics';
-import MusicVideo from './MusicVideo';
-import api from '../helpers/api';
+import KaraokeVideo from '../../song_components/KaraokeVideo';
+import Lyrics from '../../song_components/Lyrics';
+import MusicVideo from '../../song_components/MusicVideo';
+import api from '../../helpers/api';
+import { useParams } from 'react-router';
 
-let RandomSong = () => {
+let RandomGenreSong = () => {
+    const {genre} = useParams();
     let [song, setSong] = useState({});
     let [lyrics, setLyrics] = useState("");
     let [karaokeUrl, setKaraokeUrl] = useState("");
     let [musicUrl, setMusicUrl] = useState("");
     useEffect(() => {
         let gatherSong = async () => {
-          let res = await api.getRandomSong();
-          setSong(res.song);
-          setLyrics(res.lyrics);
-          setKaraokeUrl(res.karaokeUrl);
-          setMusicUrl(res.musicVideoUrl);
+            let res = await api.getRandomSongBasedOnGenre(genre);
+            setSong(res.song);
+            setLyrics(res.lyrics);
+            setKaraokeUrl(res.karaokeUrl);
+            setMusicUrl(res.musicVideoUrl);
         }
         gatherSong();
-      }, []);
+      }, [genre]);
     return (
         <>
             {song.title ? <h1>{song.title}</h1> : <h1>Loading</h1>}
@@ -29,4 +31,4 @@ let RandomSong = () => {
     )
 }
 
-export default RandomSong;
+export default RandomGenreSong;
