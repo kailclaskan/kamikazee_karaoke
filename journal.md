@@ -283,3 +283,64 @@ Updated App. Instead of running the random song right when it loads, I have a la
 Cleaned up some unused vars and imports.
 A slightly different structure to the frontend.
 Added filter_components folder which contains the filter components and FilterSong folder which contains all the random song based on components.
+
+**09/08/2021**
+Database day!!!
+Set up the ability to add a user, authenticate a user, like a song and get a list of songs from the database.
+Realized my seed was setup incorrectly and fixed it.
+Instead of song ID (which would be easier) the favorites table stores the song name and artist.
+Need to rebuild the DB with this in mind.
+Rebuilt the DB
+Created the userAuth and UserRegistration Schemas.
+Quicker than I thought. Now I have to get into creating/sending token....
+Installed packages bcrypt and jsonschema
+Installed jsonwebtoken
+Wrote tokens.js script.
+Working on auth.js.
+Tested /auth and /token and confirmed they work as expected.
+Added the ability to add favorites to the database.
+Ran tests to verify it worked and they were successful.
+
+Still need to add ways to update user profile and unfavorite songs.
+The second should be just as easy as adding, just change /:username/favorites/:songName/:artistName to /:username/unfavorite/:songName/:artistName and change it to remove.
+Also need to have a few checks added, such as checking if the user matches the token before adding/removing a song.
+Need to verify that the song exists for the user before unfavoriting.
+Need to verify that the song does not exist before favoriting.
+
+**09/09/2021**
+Second day of DB day.
+Was able to get the frontend squared away.
+Now have a login page and a signup page
+Running into an issue with the signup page
+Need to run through and figure out what I'm missing.
+Have to stop for the day, Allergies are kicking my butt.
+
+**09/10/2021**
+Able to get Login and Signup to work.
+Perhaps I was messing up the password.
+Need to setup a confirm password input. (To Do)
+Set up Like for songs.
+Verified that a user can put a single song in the favorites table.
+Verfied that a user cannot put the same song in the favorites table.
+Need to setup an unlike function that removes the song if it's in the favorites database under the user (To Do) [Done]
+Going to need to add some user feedback. IE: Wrong password, already user with username. (To Do)
+Need to add functionality to reset passwords. (To Do) 
+Make so username can be uppercase/lowercase. (To Do)
+
+**09/13/2021**
+Created function that pulls all user liked songs in API
+Set like button to update to either like or unlike and the form onSubmit to update from handleLikeSubmit or handleUnlikeSubmit.
+Verified in DB that the like function works.
+Verified in DB that the unlike function works.
+Also verified that it works when state is set to opposite of current state.
+Verified it works regardles if you're defining the kamikazee experience, or just randomly selecting any song in the song database.
+
+**09/14/2021**
+Today's focus is on the user created play list.
+Was able to create a user based route and helper.
+Confirmed with Insomnia that it now sends all required information.
+Now I need to set up the front end.
+Front end setup as expected.
+Was a bit difficult.
+Consistently threw errors until I did the random song selection on the front end and skipped sending the songs to the back end.
+Now it will send/receive information based on the users liked songs.

@@ -4,7 +4,8 @@ const randomSong = require("../helpers/randomSong");
 const randomSongByArtist = require("../helpers/randomSongByArtist");
 const randomSongByGenre = require("../helpers/randomSongByGenre");
 const randomSongByDate = require("../helpers/randomSongByDate");
-const songInformationHelper = require("../helpers/songInformationHelper")
+const randomSongByUser = require("../helpers/randomSongByUser");
+const songInformationHelper = require("../helpers/songInformationHelper");
 const express = require("express");
 const router = new express.Router();
 
@@ -53,9 +54,12 @@ router.get("/artist/:artist", async(req, res, next)=>{
     }
 });
 
-router.get("user/:user", async(req,res,next)=>{
+router.get("/user", async(req,res,next)=>{
     try{
-        
+        let song = await req.query;
+        console.log(song)
+        let {lyrics, karaokeUrl, musicVideoUrl} = await songInformationHelper(song.songName, song.songArtist);
+        return res.json({song, lyrics, karaokeUrl, musicVideoUrl});
     } catch(e){ 
         return next(e)
     }

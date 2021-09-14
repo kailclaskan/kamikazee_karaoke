@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "jsonschema": "^1.4.0"
+  }
+}
