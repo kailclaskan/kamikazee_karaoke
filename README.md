@@ -1,11 +1,37 @@
-# Used API's
+# Kamikazee Karaoke
+
+Have you ever been out on the town, having fun singing Karaoke when you suddenly didn't know what you wanted to sing? Let's be honest it's happened
+most of the time, for me that is. This app was created with that idea in mind. I was out one night, having a few drinks and was tired of singing the 
+same old songs. This app has a few different options to choose from when selecting a song. First there's the Kamikazee option. It allows you to 
+receive any song from the entire database of songs. Then you can filter the songs by artist, genre or date. This will select songs only by the selected
+option. Finally, there's one more filtering option....
+
+The app pulls a Karaoke Video, a link to the music video and the lyrics for the song. When you receive your song it will have a like button. This button, 
+if signed in, will allow a user to add the song to their own personal list. When signed in a user can filter all songs by just those songs. At that point 
+a user can randomly select songs based on that list.
+
+## Used API's
     * https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=
       * This is for the youtube karaoke video and the music video that will be populated.
     * Technically not an api, but to pull the lyrics I use the genius-lyrics node package. It uses the genius API to pull the lyrics and only the lyrics.
     * Finally I will use personal api for user creation so users can like songs.
       * This will create a new song array that only includes the users liked songs and will randomize based on that array if the user chooses to do this.
 
-# Getting Started with Create React App
+## Stack Used 
+  -React
+  -Javascript
+  -PostgreSQL
+  -Express
+  -Node
+
+## User Flows
+Login, Sign Up, Filter, Kamikazee
+
+Login -> Input Username and Password -> User signs in if info correct.
+Signup -> Input Username, Password, First Name, Last Name, Email Address, Date of Birth, Security Question, Security Answer -> User signs in if information is correct.
+Filter Your Kamikazee Karaoke Experience -> Filter options open up -> Select option -> Random Song opens up.
+Kamikazee -> Random song from the entire database opens up.
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
