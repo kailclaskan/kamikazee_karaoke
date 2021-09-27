@@ -3,6 +3,7 @@ import React from 'react';
 let FilterDate = () => {
     return (
         <>
+            <h1 className="h1DateFilter">Filter by Year</h1>
             <div className="divDate">
                 <a className="aDate" href="/filter/date/1930/1939">1930 - 1939</a>
                 <a className="aDate" href="/filter/date/1940/1949">1940 - 1949</a>

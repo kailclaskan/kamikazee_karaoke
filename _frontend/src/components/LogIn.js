@@ -26,27 +26,31 @@ const LogIn = ({retrieveToken}) => {
         <>
             <div className="loginParent">
                 <h1 className="loginH1">Log In</h1>
-                <p className="loginP">By logging in you have the ability to like songs, which allows you to randomly select between the songs you liked.</p>
+                <div className="divLoginInfo">By logging in you have the ability to like songs, which allows you to randomly select between the songs you liked.</div>
                 <form className="loginForm" onSubmit={handleSubmit} action="/token" method="POST">
                     <div className="loginDiv">
-                        <input
-                            type="text"
-                            className="loginInputs"
-                            placeholder="Username"
-                            name="username"
-                            id="username"
-                            key="username"
-                            value={formData.username}
-                            onChange={handleChange} />
-                        <input
-                            type="password"
-                            className="loginInputs"
-                            placeholder="Password"
-                            name="password"
-                            id="password"
-                            key="password"
-                            value={formData.password}
-                            onChange={handleChange} />
+                        <div>
+                            <input
+                                type="text"
+                                className="loginInputs"
+                                placeholder="Username"
+                                name="username"
+                                id="username"
+                                key="username"
+                                value={formData.username}
+                                onChange={handleChange} />
+                        </div>
+                        <div>
+                            <input
+                                type="password"
+                                className="loginInputs"
+                                placeholder="Password"
+                                name="password"
+                                id="password"
+                                key="password"
+                                value={formData.password}
+                                onChange={handleChange} />
+                        </div>
                     </div>
                     <div className="loginDiv">
                         <button className="loginButton">Login</button>

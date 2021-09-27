@@ -10,6 +10,8 @@ let RandomSong = ({like, unlike, user, songs}) => {
     let [lyrics, setLyrics] = useState("");
     let [karaokeUrl, setKaraokeUrl] = useState("");
     let [musicUrl, setMusicUrl] = useState("");
+
+
     useEffect(() => {
         let gatherSong = async () => {
           let res = await api.getRandomSong();

@@ -6,7 +6,7 @@ let KaraokeVideo = ({songTitle, songArtist, karaokeUrl}) => {
     return (
         <>
             <h3>Karaoke Video</h3>
-            <iframe src={karaokeUrl} title={`Karaoke Video of ${songTitle} by ${songArtist}`} width="400" height="300"></iframe>
+            <iframe src={karaokeUrl} title={`Karaoke Video of ${songTitle} by ${songArtist}`}></iframe>
         </>
     )
 }

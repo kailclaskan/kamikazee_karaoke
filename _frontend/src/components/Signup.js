@@ -32,9 +32,10 @@ const Signup = ({signUp}) => {
         <>
             <div className="signupParent">
                 <h1 className="signupH1">Signup</h1>
-                <p className="signupP">By signing up you have the ability to like songs, which allows you to randomly select between the songs you liked.</p>
+                <div className="divSignup">By signing up you have the ability to like songs, which allows you to randomly select between the songs you liked.</div>
                 <form className="signupForm" onSubmit={handleSubmit}>
                     <div className="signupDiv">
+                        <div>
                         <input 
                             type="text"
                             className="signupInputs"
@@ -44,6 +45,8 @@ const Signup = ({signUp}) => {
                             key="username"
                             value={formData.username}
                             onChange={handleChange} />
+                        </div>
+                        <div>
                         <input 
                             type="password"
                             className="signupInputs"
@@ -53,7 +56,8 @@ const Signup = ({signUp}) => {
                             key="password"
                             value={formData.password}
                             onChange={handleChange} />
-                        {/* add functionality for checking that passwords match before submitting.**/}
+                        </div>
+                        <div>
                         <input 
                             type="text"
                             className="signupInputs"
@@ -63,6 +67,8 @@ const Signup = ({signUp}) => {
                             key="firstName"
                             value={formData.firstName}
                             onChange={handleChange} />
+                        </div>
+                        <div>
                         <input 
                             type="text"
                             className="signupInputs"
@@ -72,6 +78,8 @@ const Signup = ({signUp}) => {
                             key="lastName"
                             value={formData.lastName}
                             onChange={handleChange} />
+                        </div>
+                        <div>
                         <input 
                             type="text"
                             className="signupInputs"
@@ -81,6 +89,8 @@ const Signup = ({signUp}) => {
                             key="email"
                             value={formData.email}
                             onChange={handleChange} />
+                        </div>
+                        <div>
                         <input 
                             type="password"
                             className="signupInputs"
@@ -90,6 +100,8 @@ const Signup = ({signUp}) => {
                             key="dateOfBirth"
                             value={formData.dateOfBirth}
                             onChange={handleChange} />
+                        </div>
+                        <div>
                         <input 
                             type="text"
                             className="signupInputs"
@@ -99,6 +111,8 @@ const Signup = ({signUp}) => {
                             key="securityQuestion"
                             value={formData.securityQuestion}
                             onChange={handleChange} />
+                        </div>
+                        <div>
                         <input 
                             type="password"
                             className="signupInputs"
@@ -108,6 +122,7 @@ const Signup = ({signUp}) => {
                             key="securityAnswer"
                             value={formData.securityAnswer}
                             onChange={handleChange} />
+                        </div>
                     </div>
                     <div>
                         <button className="signupButton">Sign Up</button>

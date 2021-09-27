@@ -344,3 +344,10 @@ Front end setup as expected.
 Was a bit difficult.
 Consistently threw errors until I did the random song selection on the front end and skipped sending the songs to the back end.
 Now it will send/receive information based on the users liked songs.
+
+**09/26/2021**
+Worked on styling for the most part over the last week and half.
+Been busy so I'm putting in some extra effort today.
+I'd like to finish the project today, or at least by the 1st.
+Finished styling the karaoke video page.
+Finished the styling for the signup/login forms.

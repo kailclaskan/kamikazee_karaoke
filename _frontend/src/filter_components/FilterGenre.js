@@ -13,6 +13,7 @@ let FilterGenre = () => {
     }, []);
     return (
         <>
+            <h1 className="h1GenreSelect">Select the Genre to filter by</h1>
             <div className="divGenre">
                 {genres ? genres.map(genre => <a className="aGenre" href={`/filter/genre/${genre}`} key={genre}>{genre}</a>) : null}
             </div>

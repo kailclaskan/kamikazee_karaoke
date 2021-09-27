@@ -1,29 +1,27 @@
-.aNav {
-  border-style: solid;
-  border-color: gray;
-  border-radius: 10px;
+.aNav, .aUser {
+  margin: 10px 20px;
+  font-size: larger;
+  font-weight: bolder;
   text-decoration: none;
-  background-color: indigo;
+  color: black;
+}
+.aNav:hover, .aUser:hover{
+  border-radius: 5px;
+  background-color: rgb(62, 1, 106);
   color: whitesmoke;
-  padding: 5px;
-  margin: 0 0.5%;
-}
-.divGenre, .divArtists, .divDate{
-  width: 80%;
-  margin: 3% auto;
-}
-.aGenre, .aArtists, .aDate, .aFilter {
-  border-style: solid;  
-  border-radius: 10px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 4px;
-  margin: 0.5% 0.5%;
 }
 .aGenre{
-  border-color: black;
-  background-color: midnightblue;
+  margin: 15px;
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+}
+.aGenre:hover{
+  background-color: navy;
   color: whitesmoke;
+  border-radius: 5px;
 }
 .aArtists{
   border-color: black;
@@ -31,16 +29,117 @@
   color: whitesmoke;
 }
 .aDate {
-  border-color: black;
-  background-color: teal;
-  color: silver;
+  display: block;
+  margin: 10px auto;
+  font-size: x-large;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
   width: 20%;
 }
-.aFilter{
-  border-color: black;
-  background-color:silver;
+.aDate:hover{
+  background-color: #FAFFA6;
+  border-radius: 5px;
+}
+.aFilter, .aMusicUrl, .aRefresh{
+  width: 20%;
+  display: block;
+  font-size: x-large;
+  margin: 1% auto;
+  text-decoration: none;
   color: black;
 }
+.aFilter:hover{
+  background-color: silver;
+  border-radius: 5px;
+}
+.aMusicUrl:hover{
+  background-color: dodgerblue;
+  border-radius: 5px;
+}
+.aRefresh:hover{
+  width: 12%;
+  padding-bottom: 5px;
+  background-color: darkcyan;
+  border-radius: 5px;
+}
+.aUser{
+  margin-left: 1%;
+}
+.divGenre, .divArtists, .divDate, .divFilter{
+  width: 80%;
+  margin: 3% auto;
+}
+.divAbout{
+  width: 50%;
+  margin: 0 auto;
+  font-size: larger;
+}
+.divLyrics{
+  margin: 20px auto;
+  width: 50%;
+  text-align: left;
+  text-indent: 2rem;
+}
+.divLoginInfo, .divSignup{
+  margin: 10px 0;
+  font-size: large;
+}
+.formArtists{
+  margin: 3.5%;
+}
+.formArtistsSelect{
+  width: 15%;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+.formArtistsBtn{
+  padding: 10px 20px;
+  background-color:#FAFFA6;
+  border-radius: 10px;
+  border-color: #FAFFA6;
+  box-shadow: 3px 4px rgba(195, 211, 231, 0.5);
+  font-size: 1.0rem;
+}
+.h1FilterArtist{
+  margin: 2% 0;
+}
+.imgLogo{
+  padding-top: 10px;
+  height: 40px;
+}
+.loginButton, .signupButton{
+  width: 10%;
+  padding: 5px 0;
+  background-color: rgb(62, 1, 106);
+  color: whitesmoke;
+  font-size: large;
+  border-radius: 5px;
+}
+.loginButton:hover, .signupButton:hover{
+  background-color: whitesmoke;
+  color: black;
+}
+.loginInputs, .signupInputs{
+  margin: 5px auto;
+  padding: 5px 0;
+  width: 15%;
+  text-align: center;
+  font-size: large;
+}
+iframe{
+  width: 700px;
+  height: 400px;
+}
+p{
+  text-align: left;
+  text-indent: 2em;
+}
+
 .App {
   text-align: center;
 }
