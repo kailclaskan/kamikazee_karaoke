@@ -1,4 +1,4 @@
-const YT_API_KEY = require("../keys");
+const YT_API_KEY = "../keys" ? require("../keys") : process.env.YT_API_KEY;
 const axios = require("axios");
 
 let karaokeVideo = async (songTitle, songArtist) =>{
