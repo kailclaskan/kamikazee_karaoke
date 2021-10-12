@@ -16,10 +16,10 @@
     "morgan": "^1.10.0",
     "pg": "^8.7.1"
   },
-  "scripts": {
+  "script": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-    
+
   },
   "author": "",
   "license": "ISC"
