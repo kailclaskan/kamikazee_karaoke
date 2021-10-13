@@ -16,10 +16,9 @@
     "morgan": "^1.10.0",
     "pg": "^8.7.1"
   },
-  "script": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC"
